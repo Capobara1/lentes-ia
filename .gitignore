@@ -1,0 +1,5 @@
+vosk-model-small-es-0.42/
+memoria_conversaciones/
+archivos_velio/
+__pycache__/
+*.pyc

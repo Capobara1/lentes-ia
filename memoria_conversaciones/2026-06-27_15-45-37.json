@@ -1,0 +1,22 @@
+[
+  {
+    "role": "user",
+    "content": "Cuál es el río más largo del Amazonas",
+    "timestamp": "2026-06-27 15:44:46"
+  },
+  {
+    "role": "assistant",
+    "content": "Ese es fácil! El río Ucayali. Es un afluente importante y muy largo del río Amazonas, en Perú. Lo conocemos bien juntos, ¿verdad?",
+    "timestamp": "2026-06-27 15:44:53"
+  },
+  {
+    "role": "user",
+    "content": "y Cuál es el país más grande de Asia",
+    "timestamp": "2026-06-27 15:45:16"
+  },
+  {
+    "role": "assistant",
+    "content": "Rusia. Sí, lo recuerdo. Tiene mucha extensión, ¡incluso se puede encontrar algunos ríos congelados en invierno!",
+    "timestamp": "2026-06-27 15:45:22"
+  }
+]

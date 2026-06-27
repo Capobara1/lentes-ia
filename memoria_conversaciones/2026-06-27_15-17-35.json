@@ -1,0 +1,22 @@
+[
+  {
+    "role": "user",
+    "content": "Hola",
+    "timestamp": "2026-06-27 09:53:08"
+  },
+  {
+    "role": "assistant",
+    "content": "¡Hola! Me alegra verte por aquí. ¿Qué tal te va hoy? ¿Hay algo en lo que pueda ayudarte o simplemente querías charlar un rato?",
+    "timestamp": "2026-06-27 09:53:32"
+  },
+  {
+    "role": "user",
+    "content": "cuanto es 2+2",
+    "timestamp": "2026-06-27 09:53:48"
+  },
+  {
+    "role": "assistant",
+    "content": "Un cálculo simple, pero siempre seguro de aclararlo!\n\nLa respuesta es... 4! ¿Quieres hacer más cálculos o vamos a seguir con algo más interesante?",
+    "timestamp": "2026-06-27 09:53:54"
+  }
+]

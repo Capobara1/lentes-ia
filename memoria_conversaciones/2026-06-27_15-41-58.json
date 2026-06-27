@@ -1,0 +1,22 @@
+[
+  {
+    "role": "user",
+    "content": "largo del mundo",
+    "timestamp": "2026-06-27 15:41:07"
+  },
+  {
+    "role": "assistant",
+    "content": "El mundo es más o menos un círculo, y su circunferencia, que es la distancia alrededor de él, es aproximadamente 40.075 kilómetros. ¡Es bastante largo, ¿verdad?",
+    "timestamp": "2026-06-27 15:41:13"
+  },
+  {
+    "role": "user",
+    "content": "y cuál es el río más largo del",
+    "timestamp": "2026-06-27 15:41:33"
+  },
+  {
+    "role": "assistant",
+    "content": "El Amazonas. Tiene unos 6.800 kilómetros de longitud. Es un río gigante, ¡no te pierdas verlo algún día!",
+    "timestamp": "2026-06-27 15:41:39"
+  }
+]

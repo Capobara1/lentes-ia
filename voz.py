@@ -7,27 +7,28 @@ import tempfile
 import os
 from config import IDIOMA_VOZ, DURACION_SILENCIO, NOMBRE_ASISTENTE
 
-# Motor de voz
-motor_voz = pyttsx3.init()
-motor_voz.setProperty('rate', 150)  # Velocidad de habla
-motor_voz.setProperty('volume', 1.0)
+VOZ_FIJA_ID = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Speech\\Voices\\Tokens\\TTS_MS_ES-MX_SABINA_11.0"
 
-# Configurar voz en español si está disponible
-voces = motor_voz.getProperty('voices')
-for voz in voces:
-    if 'spanish' in voz.name.lower() or 'es' in voz.id.lower():
-        motor_voz.setProperty('voice', voz.id)
-        break
+motor_voz = None
 
 def hablar(texto):
     """Velio habla en voz alta."""
     print(f"{NOMBRE_ASISTENTE}: {texto}")
-    motor_voz.say(texto)
-    motor_voz.runAndWait()
+
+    motor = pyttsx3.init()
+    motor.setProperty('rate', 150)
+    motor.setProperty('volume', 1.0)
+    motor.setProperty('voice', VOZ_FIJA_ID)
+    motor.say(texto)
+    motor.runAndWait()
+    motor.stop()
+    del motor
 
 def escuchar():
     """Escucha el micrófono y devuelve texto."""
     recognizer = sr.Recognizer()
+    recognizer.pause_threshold = 1.5  # Segundos de silencio antes de cortar la frase
+    
     with sr.Microphone() as fuente:
         print("Escuchando...")
         recognizer.adjust_for_ambient_noise(fuente, duration=1)
